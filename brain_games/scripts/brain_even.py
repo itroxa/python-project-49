@@ -31,7 +31,7 @@ def game(rounds=3):
             print("Correct!")
             round_counter += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{correct_answer}'")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
         if round_counter == rounds:
