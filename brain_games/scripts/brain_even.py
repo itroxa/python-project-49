@@ -2,11 +2,13 @@
 import random
 import prompt
 
+
 def check_answer(user_answer, correct_answer):
     if user_answer == correct_answer:
         return True
     else:
         return False
+
 
 def question():
     question_number = random.randint(1, 1000)
@@ -15,6 +17,7 @@ def question():
     else:
         correct_answer = "no"
     return (question_number, correct_answer)
+
 
 def game(rounds=3):
     print("Welcome to the Brain Games!")
@@ -31,7 +34,8 @@ def game(rounds=3):
             print("Correct!")
             round_counter += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer is '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
         if round_counter == rounds:
@@ -40,6 +44,7 @@ def game(rounds=3):
 
 def main():
     game()
+
 
 if __name__ == '__main__':
     main()
