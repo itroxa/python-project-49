@@ -17,7 +17,7 @@ def generate_question():
     element_to_remove = random.randint(0, len(progression_list) - 1)
     correct_answer = progression_list[element_to_remove]
     progression_list[element_to_remove] = ".."
-    question = ""
+    question = "Question: "
     for element in progression_list:
         question += str(element) + " "
     return question, correct_answer
