@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 import prompt
 import brain_games.cli
-import brain_games.games.calc
+from brain_games.games.calc import show_rules, generate_question, check_answer
 
 
 def game(rounds=3):
     print("Welcome to the Brain Games!")
     user_name = brain_games.cli.welcome_user()
-    brain_games.games.calc.show_rules()
+    show_rules()
     round_counter = 0
     while round_counter < rounds:
-        question, correct_answer = brain_games.games.calc.generate_question()
+        question, correct_answer = generate_question()
         print(question)
         user_answer = prompt.integer("Your answer: ")
-        check_result = brain_games.games.calc.check_answer(user_answer, correct_answer)
+        check_result = check_answer(user_answer, correct_answer)
         if check_result:
             print("Correct!")
             round_counter += 1

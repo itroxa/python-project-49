@@ -12,7 +12,7 @@ def generate_question():
         correct_answer = "yes"
     else:
         correct_answer = "no"
-    return (question_number, correct_answer)
+    return question_number, correct_answer
 
 
 def check_answer(user_answer, correct_answer):
