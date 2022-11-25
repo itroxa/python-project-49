@@ -3,7 +3,7 @@ import random
 
 
 def show_rules():
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
 
 
 def generate_question():
