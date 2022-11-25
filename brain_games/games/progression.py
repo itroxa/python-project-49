@@ -19,7 +19,7 @@ def generate_question():
     progression_list[element_to_remove] = ".."
     question = ""
     for element in progression_list:
-         question += str(element) + " "
+        question += str(element) + " "
     return question, correct_answer
 
 

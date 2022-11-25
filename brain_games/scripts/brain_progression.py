@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import prompt
 import brain_games.cli
-from brain_games.games.progression import show_rules, generate_question, check_answer
+from brain_games.games.progression import \
+    show_rules, generate_question, check_answer
 
 
 def game(rounds=3):
