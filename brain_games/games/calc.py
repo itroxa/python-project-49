@@ -1,40 +1,25 @@
 #!/usr/bin/env python3
+import operator
 import random
 
 
-def show_rules():
-    print("What is the result of the expression?")
+GAME_RULES = 'What is the result of the expression?'
 
 
-def generate_question():
+def calculate(first_value, second_value, operation_sign):
+    if operation_sign == '+':
+        return operator.add(first_value, second_value)
+    elif operation_sign == '-':
+        return operator.sub(first_value, second_value)
+    else:
+        return operator.mul(first_value, second_value)
+
+
+def qa_generate():
     operators = ('+', '-', '*')
     first_value = random.randint(1, 50)
     second_value = random.randint(1, 50)
     operation_sign = random.choice(operators)
-    if operation_sign == '+':
-        correct_answer = add(first_value, second_value)
-    elif operation_sign == '-':
-        correct_answer = sub(first_value, second_value)
-    else:
-        correct_answer = multiply(first_value, second_value)
+    correct_answer = str(calculate(first_value, second_value, operation_sign))
     question = f"Question: {first_value} {operation_sign} {second_value}"
     return question, correct_answer
-
-
-def check_answer(user_answer, correct_answer):
-    if user_answer == correct_answer:
-        return True
-    else:
-        return False
-
-
-def add(a, b):
-    return a + b
-
-
-def sub(a, b):
-    return a - b
-
-
-def multiply(a, b):
-    return a * b

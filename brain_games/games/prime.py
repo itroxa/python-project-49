@@ -2,30 +2,18 @@
 import random
 
 
-def show_rules():
-    print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(number):
-    divisor = 2
-    if number > 1:
-        while divisor < number / 2:
-            if (number % divisor) == 0:
-                return "no"
-            divisor += 1
-        return "yes"
-    return "no"
+def prime_check(number):
+    for i in range(2, number):
+        if (number % i) == 0:
+            return "no"
+    return "yes"
 
 
-def generate_question():
+def qa_generate():
     number = random.randint(1, 100)
     question = f"Question: {number}"
-    correct_answer = is_prime(number)
+    correct_answer = prime_check(number)
     return question, correct_answer
-
-
-def check_answer(user_answer, correct_answer):
-    if user_answer == correct_answer:
-        return True
-    else:
-        return False
