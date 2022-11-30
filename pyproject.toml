@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "troxa-hexlet-code"
+name = "hexlet-code"
 version = "0.1.1"
 description = "A set of mini-games with commands brain-even, brain-calc, brain-gcd, brain-progression, brain-prime"
 authors = ["Vyacheslav Terskikh <troxa843@gmail.com>"]
