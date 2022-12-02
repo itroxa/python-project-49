@@ -14,7 +14,7 @@ def gcd_check(first_value, second_value):
     return str(first_value)
 
 
-def qa_generate():
+def generate_qa():
     first_value = random.randint(1, 100)
     second_value = random.randint(1, 100)
     question = f"Question: {first_value} {second_value}"

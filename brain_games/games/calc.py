@@ -15,7 +15,7 @@ def calculate(first_value, second_value, operation_sign):
         return operator.mul(first_value, second_value)
 
 
-def qa_generate():
+def generate_qa():
     operators = ('+', '-', '*')
     first_value = random.randint(1, 50)
     second_value = random.randint(1, 50)

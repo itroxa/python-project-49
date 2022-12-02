@@ -12,7 +12,7 @@ def prime_check(number):
     return "yes"
 
 
-def qa_generate():
+def generate_qa():
     number = random.randint(1, 100)
     question = f"Question: {number}"
     correct_answer = prime_check(number)

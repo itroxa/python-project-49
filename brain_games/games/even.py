@@ -12,7 +12,7 @@ def parity_check(number):
         return "no"
 
 
-def qa_generate():
+def generate_qa():
     number = random.randint(1, 1000)
     question = f"Question: {number}"
     correct_answer = parity_check(number)

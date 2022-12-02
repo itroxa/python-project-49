@@ -12,7 +12,7 @@ def start_game(game_type):
     print(game_type.GAME_RULES)
     round_counter = 0
     while round_counter < ROUNDS:
-        question, correct_answer = game_type.qa_generate()
+        question, correct_answer = game_type.generate_qa()
         print(question)
         user_answer = prompt.string("Your answer: ").lower()
         if user_answer == correct_answer:
