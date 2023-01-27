@@ -42,11 +42,11 @@ To work with the package, you need to clone the repository.
 Clone the project on the command line:
 #### Clone via HTTPS:
 ```
-$ git clone https://github.com/IgorGakhov/python-project-lvl1.git
+$ git clone https://github.com/itroxa/python-project-49.git
 ```
 #### Clone via SSH:
 ```
-$ git clone git@github.com:IgorGakhov/python-project-lvl1.git
+$ git clone git@github.com:itroxa/python-project-49.git
 ```
 #### Make build and package-install
 ```
